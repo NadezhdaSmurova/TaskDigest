@@ -30,7 +30,7 @@ source "${VENV_DIR}/bin/activate"
 
 echo "[3/5] Installing Python dependencies"
 python -m pip install --upgrade pip
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 
 # 4) Ollama install (best-effort)
 echo "[4/5] Checking Ollama"

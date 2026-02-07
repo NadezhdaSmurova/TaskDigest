@@ -28,13 +28,19 @@ A sample report is available in `outputs_demo/report.html`
 
 ## Install
 
-```bash
+```
 chmod +x install.sh
 ./install.sh
+```
 
+Оllama (If Ollama was installed via install.sh, the model is already pulled)
+```
+ollama serve
+ollama pull phi3:mini 
+```
 
 Requirements:
-
+```
 Python 3.9+
 
 macOS or Linux
@@ -47,16 +53,14 @@ macOS or Linux
 
 No API keys. Everything runs locally.
 
+# Run with local Ollama LLM (extended timeout for slow/cold-start models)
 ```
-ollama serve
-ollama pull phi3:mini (If Ollama was installed via install.sh, the model is already pulled)
+python main.py --input inputs_demo --output outputs --llm ollama --timeout 120
+```
 
-
-python main.py \
-  --input inputs_demo \
-  --output outputs \
-  --llm ollama
-
+# Run with local Ollama LLM
+```
+python main.py --input inputs_demo --output outputs --llm ollama
 ```
 
 2) Fully deterministic (no AI)
@@ -71,6 +75,7 @@ python main.py \
 ## Output
 
 After running, TaskDigest generates:
+
 ```
 outputs/
 ├── report.md          # compact manager-readable report
@@ -81,6 +86,8 @@ outputs/
 ├── slack_events.json  # parsed slack events (debug / audit)
 └── email_events.json  # parsed email events (debug / audit)
 ```
+
+
 ## How TaskDigest works
 
 Event-aware parsing
