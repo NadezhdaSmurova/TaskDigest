@@ -1,0 +1,137 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TaskDigest</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif; margin: 40px; }
+    h1 { margin: 0 0 6px 0; }
+    .muted { color: #666; }
+    .card { border: 1px solid #eee; border-radius: 14px; padding: 18px; margin: 14px 0; }
+    ul { margin: 10px 0 0 18px; }
+    li { margin: 10px 0; line-height: 1.35; }
+    .src { color: #777; font-size: 12px; margin-left: 8px; white-space: nowrap; }
+    .cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+    @media (max-width: 980px) { .cols { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <h1>TaskDigest</h1>
+  <div class="muted">Generated: 2026-02-07T13:12:12</div>
+
+  
+  <div class="card">
+    <h2 style="margin-top:0;">Manager Summary (LLM)</h2>
+    <ul>
+      
+        <li>P0 - 2 tasks</li>
+      
+        <li>P1 - 8 tasks</li>
+      
+        <li>P2 - 2 tasks</li>
+      
+    </ul>
+  </div>
+  
+
+  <div class="cols">
+    
+    <div class="card" style="margin:0;">
+      <h3 style="margin-top:0;">
+        🔥 HIGH / P0
+      </h3>
+      <ul>
+        
+        
+        
+          <li>
+            <b>[Email]</b> EMAIL: URGENT: Settlement mismatch in batch #2026-02-03 | FROM: finance.ops@company.ae | EXCERPT: Hi team, We noticed a mismatch between the settlement report and ledger totals for batch #2026-02-03. Difference: +18,420 AED. Initial hypothesis: duplicated entries from a retry loop. Can someone confirm whether the payout webhook hotfix m
+            <span class="src">src: email_URGENT: Settlement mismatch in batch #2026-02-03</span>
+          </li>
+        
+          <li>
+            <b>[Standup]</b> STANDUP: Payments Ops (2026-02-03) | IN_PROGRESS: Investigating settlement mismatch in batch #2026-02-03 | BLOCKERS: No confirmation yet whether webhook hotfix affected settlement records | RISKS: Settlement mismatch (+18,420 AED) may delay merchant payouts today
+            <span class="src">src: standup_2026-02-03:payments_ops</span>
+          </li>
+        
+      </ul>
+    </div>
+    
+    <div class="card" style="margin:0;">
+      <h3 style="margin-top:0;">
+        🟡 MEDIUM / P1
+      </h3>
+      <ul>
+        
+        
+        
+          <li>
+            <b>[Email]</b> EMAIL: KYC vendor performance update | FROM: ops@company.ae | NOTES: We are observing elevated response times from our KYC vendor this morning (average latency 8–12 seconds). No hard failures so far, but onboarding SLAs might be impacted today. We are monitoring and will update if thresholds are crossed.
+            <span class="src">src: email_KYC vendor performance update</span>
+          </li>
+        
+          <li>
+            <b>[Slack]</b> SLACK: [09:12] Nadia
+            <span class="src">src: slack_09:12:Nadia</span>
+          </li>
+        
+          <li>
+            <b>[Slack]</b> SLACK: [09:18] Amir
+            <span class="src">src: slack_09:18:Amir</span>
+          </li>
+        
+          <li>
+            <b>[Slack]</b> SLACK: [09:33] Amir | NOTES: Blocked: still waiting for production access to the fraud dashboard (requested yesterday).; This blocks investigation of affiliate traffic, right?; Yes, cannot verify device fingerprints without it.
+            <span class="src">src: slack_09:33:Amir</span>
+          </li>
+        
+          <li>
+            <b>[Slack]</b> SLACK: [09:41] Nadia | NOTES: Risk: new affiliate campaign traffic looks abnormal (same device fingerprint repeating).; Could be incentive abuse. Any volume spike?; +35% vs baseline in 2 hours.
+            <span class="src">src: slack_09:41:Nadia</span>
+          </li>
+        
+          <li>
+            <b>[Slack]</b> SLACK: [10:08] Amir | NOTES: Who owns the alerting thresholds for chargeback spikes? We need a quick review.
+            <span class="src">src: slack_10:08:Amir</span>
+          </li>
+        
+          <li>
+            <b>[Slack]</b> SLACK: [10:20] Nadia | NOTES: Action needed: confirm if we should pause affiliate source “X-Partner” until investigation completes.; Agree — recommend temporary pause.
+            <span class="src">src: slack_10:20:Nadia</span>
+          </li>
+        
+          <li>
+            <b>[Standup]</b> STANDUP: Trust & Safety (2026-02-03) | IN_PROGRESS: Investigating abnormal traffic from new affiliate campaign | BLOCKERS: No production access to fraud dashboard (pending approval) | RISKS: Possible incentive abuse if traffic continues | NOTES: Investigating abnormal traffic from new affiliate campaign, needs review today.; No production access to fraud dashboard (pending approval). Blocking progress.
+            <span class="src">src: standup_2026-02-03:trust_safety</span>
+          </li>
+        
+      </ul>
+    </div>
+    
+    <div class="card" style="margin:0;">
+      <h3 style="margin-top:0;">
+        🟢 LOW / P2
+      </h3>
+      <ul>
+        
+        
+        
+          <li>
+            <b>[Email]</b> EMAIL: UI release planning – fee breakdown | FROM: product@company.ae | NOTES: Based on today's risk signals, we propose moving the "fee breakdown" UI change to Friday.
+            <span class="src">src: email_UI release planning – fee breakdown</span>
+          </li>
+        
+          <li>
+            <b>[Standup]</b> STANDUP: Product (2026-02-03) | IN_PROGRESS: Final QA checks | NOTES: Final QA checks in progress.
+            <span class="src">src: standup_2026-02-03:product</span>
+          </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+
+</body>
+</html>
+        
