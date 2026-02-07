@@ -1,13 +1,9 @@
-# TaskDigest
+## TaskDigest
 
-<<<<<<< HEAD
 TaskDigest turns noisy operational messages (Email, Slack, Standups) into a **clear, manager-ready daily summary** — with **deterministic priorities**, visible risks, and **zero data leakage**.
-=======
-TaskDigest converts noisy operational inputs (Emails, Slack logs, Standups) into a **clear, manager-ready daily report** with **deterministic P0 / P1 / P2 priorities**, visible risks, and full auditability — **running fully locally**.
 
 The goal is simple:  
 **understand the operational situation in seconds, not by reading threads.**
->>>>>>> 2665d8a (Initial commit: TaskDigest prototype)
 
 ---
 
@@ -15,7 +11,6 @@ The goal is simple:
 
 In real operations:
 
-<<<<<<< HEAD
 - Important risks are buried in long email threads
 - Slack discussions require reading full context to understand decisions
 - Standups repeat the same blockers across days
