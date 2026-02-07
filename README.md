@@ -53,12 +53,12 @@ macOS or Linux
 
 No API keys. Everything runs locally.
 
-# Run with local Ollama LLM (extended timeout for slow/cold-start models)
+#Run with local Ollama LLM (extended timeout for slow/cold-start models)
 ```
 python main.py --input inputs_demo --output outputs --llm ollama --timeout 120
 ```
 
-# Run with local Ollama LLM
+#Run with local Ollama LLM
 ```
 python main.py --input inputs_demo --output outputs --llm ollama
 ```
