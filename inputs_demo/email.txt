@@ -1,0 +1,46 @@
+Subject: URGENT: Settlement mismatch in batch #2026-02-03
+From: finance.ops@company.ae
+
+Hi team,
+
+We noticed a mismatch between the settlement report and ledger totals for batch #2026-02-03.
+
+Difference: +18,420 AED.
+
+Initial hypothesis: duplicated entries from a retry loop.
+
+Can someone confirm whether the payout webhook hotfix might affect settlement records?
+If we can't confirm by EOD, we may need to delay settlement to merchants.
+
+Thanks,
+Finance Ops
+
+
+Subject: KYC vendor performance update
+From: ops@company.ae
+
+Hi all,
+
+We are observing elevated response times from our KYC vendor this morning
+(average latency 8–12 seconds).
+
+No hard failures so far, but onboarding SLAs might be impacted today.
+We are monitoring and will update if thresholds are crossed.
+
+Best,
+Ops Team
+
+
+Subject: UI release planning – fee breakdown
+From: product@company.ae
+
+Hey team,
+
+Based on today's risk signals, we propose moving the "fee breakdown" UI change
+to the Friday release to avoid touching checkout flows today.
+
+Please shout if there are objections.
+
+Thanks,
+Product
+

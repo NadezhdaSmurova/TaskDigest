@@ -1,0 +1,39 @@
+STANDUP: Payments Ops
+DATE: 2026-02-03
+
+IN_PROGRESS:
+- Investigating settlement mismatch in batch #2026-02-03
+
+BLOCKERS:
+- No confirmation yet whether webhook hotfix affected settlement records
+
+RISKS:
+- Settlement mismatch (+18,420 AED) may delay merchant payouts today
+
+
+---
+STANDUP: Trust & Safety
+DATE: 2026-02-03
+
+IN_PROGRESS:
+- Investigating abnormal traffic from new affiliate campaign
+
+BLOCKERS:
+- No production access to fraud dashboard (pending approval)
+
+RISKS:
+- Possible incentive abuse if traffic continues
+
+
+---
+STANDUP: Product
+DATE: 2026-02-03
+
+IN_PROGRESS:
+- Final QA checks
+
+BLOCKERS:
+- None
+
+RISKS:
+- None

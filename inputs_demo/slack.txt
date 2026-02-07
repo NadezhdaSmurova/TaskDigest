@@ -1,0 +1,57 @@
+[09:12] Nadia:
+Deployed hotfix for payout webhook retries (duplicate callbacks reduced). Monitoring.
+
+    ↳ [09:14] Amir:
+    👍 Thanks. Any impact on settlements?
+
+        ↳ [09:16] Nadia:
+        Should not affect existing batches. New retries only.
+
+---
+
+[09:18] Amir:
+FYI KYC vendor latency is spiking (avg 8–12s). Might impact onboarding SLA today.
+
+    ↳ [09:22] Sara:
+    Seeing same from ops side. No hard failures yet.
+
+        ↳ [09:24] Amir:
+        OK, flagging as medium risk unless it degrades further.
+
+---
+
+[09:33] Amir:
+Blocked: still waiting for production access to the fraud dashboard (requested yesterday).
+
+    ↳ [09:35] Nadia:
+    This blocks investigation of affiliate traffic, right?
+
+        ↳ [09:36] Amir:
+        Yes, cannot verify device fingerprints without it.
+
+---
+
+[09:41] Nadia:
+Risk: new affiliate campaign traffic looks abnormal (same device fingerprint repeating).
+
+    ↳ [09:44] Sara:
+    Could be incentive abuse. Any volume spike?
+
+        ↳ [09:47] Nadia:
+        +35% vs baseline in 2 hours.
+
+---
+
+[10:08] Amir:
+Question: who owns the alerting thresholds for chargeback spikes? We need a quick review.
+
+    ↳ [10:12] Sara:
+    I think Risk, but not 100% sure.
+
+---
+
+[10:20] Nadia:
+Action needed: confirm if we should pause affiliate source “X-Partner” until investigation completes.
+
+    ↳ [10:23] Amir:
+    Agree — recommend temporary pause.
