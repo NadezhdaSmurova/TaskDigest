@@ -1,3 +1,14 @@
+x<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+__pycache__/
+.venv/
+.env
+outputs/
+*.log
+notes/
+=======
+>>>>>>> 2665d8a (Initial commit: TaskDigest prototype)
 # Python cache
 __pycache__/
 *.pyc
@@ -19,3 +30,7 @@ temp_*.wav
 # Jupyter checkpoints
 .ipynb_checkpoints/
 .idea/
+<<<<<<< HEAD
+=======
+>>>>>>> bb9d3af (Initial commit: TaskDigest prototype)
+>>>>>>> 2665d8a (Initial commit: TaskDigest prototype)
