@@ -31,6 +31,8 @@ A sample report is available in `outputs_demo/report.html`
 ```
 chmod +x install.sh
 ./install.sh
+source .venv/bin/activate
+
 ```
 
 Оllama (If Ollama was installed via install.sh, the model is already pulled)
